@@ -283,10 +283,19 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
-}
+function getSumOfDigits(num) {
+  let sum = 0;
+  let count = num;
 
+  while (count > 0) {
+    const nextDigit = count % 10;
+
+    sum += nextDigit;
+
+    count = Math.floor(count / 10);
+  }
+  return sum;
+}
 /**
  * Returns true if the given number is a power of two, false otherwise.
  *
