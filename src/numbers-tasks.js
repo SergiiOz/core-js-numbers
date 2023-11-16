@@ -52,7 +52,7 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  const averageOfTwoNumbers = (value1 + value2) / 2;
+  const averageOfTwoNumbers = value1 / 2 + value2 / 2;
   return averageOfTwoNumbers;
 }
 
@@ -71,8 +71,9 @@ function getAverage(value1, value2) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  const distance = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+  return distance;
 }
 
 /**
