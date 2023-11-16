@@ -157,8 +157,9 @@ function parseNumberFromString(value) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelepipedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelepipedDiagonal(a, b, c) {
+  const diagonalLength = Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+  return diagonalLength;
 }
 
 /**
@@ -233,8 +234,9 @@ function toNumber(/* value, def */) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(num) {
+  const cubeOfNumber = num ** 3;
+  return cubeOfNumber;
 }
 
 /**
